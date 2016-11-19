@@ -1,0 +1,410 @@
+@charset "utf-8";
+/*通用基础样式*/
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#666;
+}
+a:hover{
+	text-decoration:underline;
+	color:#E4393C;
+}
+body{
+	font-size:12px;
+	font-family: "微软雅黑",Arial, Verdana, "宋体";
+	color:#666;
+}
+.lt{
+	float:left;
+}  
+.rt{
+	float:right;
+}
+.clear{
+	clear:both;
+} 
+/*页面基本布局格式*/
+#top{
+	width:100%;
+	height:30px;
+	background:#F7F7F7;
+	border:1px solid #EEE;
+} 
+#top_bar,#search,#nav,#main,#may_like,#guide,#footer{
+	width:1210px;
+	margin:0 auto;
+} 
+#top_bar{
+	line-height:30px;
+}
+#top_bar>img{
+	width:12px;
+	height:12px;
+}
+#top_bar :first-child:hover{
+	transform:rotate(540deg);
+	transition:transform 1000ms linear 0;
+}
+#top_bar .rt{
+	float:right;
+}
+#top_bar>ul>li{
+	float:left;
+	padding-right:10px;
+	position:relative;
+}
+#top_bar ul li b{
+	border-left:2px solid #DEDCDD;
+	margin-right:10px;
+}
+
+#cellphone{
+    padding-left:5px;
+    
+
+}
+#cellphone>span{
+		
+	padding:9px 0px 9px 12px;
+	background:url('../image/cellphone01.png') 0 5px no-repeat;
+	
+	border:1px solid transparent;    
+}
+#cellphone>span>a{
+	padding-left:5px;
+}
+#cellphone>span:hover{
+	
+	background:#fff;
+	background:url('../image/cellphone01.png') 0 -20px no-repeat;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-bottom-color:#fff;
+}
+#customer>a{
+    padding:9px 15px 9px 5px;	
+	border:1px solid transparent;
+}
+#customer>a:hover{
+    background:#fff;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-bottom-color:#fff;
+}
+/*网站导航*/
+#site_map{
+	padding-right:0;
+	width:;
+}
+#site_map>a{
+	padding:9px 15px 9px 5px;	
+	border:1px solid transparent;
+	position:relative;
+	z-index:3;
+}
+#site_map:hover{
+	background:#fff;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-bottom-color:#fff;
+	
+
+}
+
+#site_map_dropdown{
+	width:1210px;
+	position:absolute;
+	top:27px;
+	right:0;
+	border:1px solid #ddd;
+    background:white;
+    box-shadow:0 0 2px 2px #eee;
+    z-index:1;
+	display:none;
+}
+#site_map_dropdown>div{
+	padding-left:10px;
+	float:left;
+	width:290px;	
+}
+#site_map_dropdown>div>table tr td{
+	width:50px;
+}
+/*关注京东*/
+#twoD_code{
+    width:72px;
+    z-index:1;
+}
+#twoD_code:hover{
+	background:white;
+}
+#twoD_image{
+	display:none;
+}
+/*客户服务*/
+div.customer_dropdown{
+   width:180px;
+   position:absolute;  
+   border:1px solid #ddd;
+   background:white;
+   box-shadow:0 0 2px 2px #eee;
+   z-index:1;
+   display:none;
+}
+#customer:hover{
+	background:#fff;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-bottom-color:#fff;
+}
+#customer01{
+	padding-left:10px;
+	font-weight: bold;
+}
+.item_client_left{
+   float:left;
+   padding:5px 10px;
+}
+
+.item_client_right{
+   padding:5px 10px 5px 80px;
+}
+#customer01>ul{
+	
+	padding-right: 20px;
+}
+#client01{
+	padding-top:30px;
+	padding-left:10px;
+	font-weight: bold;
+	}
+.item_business>ul>li{
+	float:left;
+	padding-left:10px;
+}
+
+
+
+
+
+
+/*logo和搜索栏*/
+#search{
+	height:100px;
+	
+	padding:15px 0;
+	position:relative;
+}
+#search>div{
+	
+	padding-right: 
+}
+#search_box{
+	position:absolute;
+	margin-left:365px;
+}
+#search_box #press{
+	border:2px solid #E4393C;
+	background:#E4393C;
+}
+#press [type="text"]{
+	height:30px;
+	width:456px;
+	padding:3px;
+	line-height:20px;
+	font-size: 20px;
+	color:#666;
+}
+#press [type="button"]{
+	background:#E4393C;
+	border:none;
+	width:80px;
+	height:30px;
+	color:white;
+	font-size:20px;
+	font-weight:bold;
+	cursor:pointer;
+}
+#search_box>div>ul>li{
+	float:left;
+	margin: 5px 10px;
+	font-size: 12px;
+}
+#press_dropdown{
+	position:absolute;
+	width:463px;
+	height:200px;
+	border:1px solid #E4393C;
+	background:white;
+	display:none;
+}
+#press_dropdown p{
+	width:463px;
+    height:30px;
+	clear:both;
+}
+#press_dropdown p a{
+	padding:5px 10px;
+}
+#press_dropdown p span{
+	padding:5px 10px;
+}
+#press_dropdown p:hover{
+	
+	background:#ddd;
+}
+/*我的购物车*/
+#search_shopped{
+	height:43px;
+	width:160px;
+	border:1px solid #ddd;
+	background:#DEDCDD;
+	text-align:center;
+	line-height: 43px;
+	margin-right:70px;
+	padding-bottom:2px;
+	position:relative;
+	
+}
+#search_shopped:hover{
+	
+	background:white;
+	border-bottom: none;
+    
+}
+#search_shopped .shop_left{
+	padding:15px 15px;
+	margin-left:15px;
+	background: url('../image/cellphone01.png') 0 -45px no-repeat;
+}
+#search_shopped .shop_right{
+	
+	
+	border:5px solid black;
+    border-color:#000 transparent transparent transparent;
+    border-width:5px 5px 0px 5px;
+    display:inline-block;
+
+	
+}
+#shopped_dropdown{
+	position:absolute;
+	width:300px;
+	background:white;
+	border:1px solid #ddd;
+	margin-top:0px;
+	right:0;
+	z-index:-1;
+	display:none;
+}
+#shopped_dropdown>p{
+	padding:13px 10px;
+}
+
+
+
+#nav{
+	height:48px;
+	background:#B2191B;
+}
+#main{
+	background:#faf;
+	height:100px;
+}
+/*可能喜欢*/
+#may_like{
+	border:1px solid #ddd;
+	border-top:2px solid #999;
+	height:276px;
+	width:1210px;
+	margin:30px auto 15px auto;
+	position:relative;
+}
+#may_like_txt{
+   height:20px;  
+}
+#may_like_txt h2{
+  font-size:14px;
+  font-weight:400;
+  float:left;
+  margin:5px 5px;
+  /*clear:both;*/
+}
+#may_like_txt span{
+  float:right;
+  margin:5px 5px;
+ 
+}
+#may_like_pic{	
+	position:absolute;
+	width:1128px;
+	height:230px;
+	overflow:hidden;
+	margin-left:30px;
+}
+#may_like_pic ul{
+	width:4324px;
+	height:230px;
+}
+#may_like_pic ul li{
+	float:left;
+	padding:18px 15px;
+}
+#may_like_pic ul li p{
+	text-align: center;
+	font-size: 20px;
+	color:#E3393C;
+	padding-top:5px;
+}
+/*购物指南*/
+#guide{
+	position:relative;
+	margin-bottom:24px;
+    height:300px;
+}
+#guide_pic{
+	height:94px;
+	background:#F5F5F5;
+    
+}
+#guide_pic img{
+    margin:20px 62px 20px 10px;
+}
+#guide_txt div{
+	width:275px;
+     float:left;
+    
+     font-size:12px;
+     line-height:20px;
+}
+#guide_txt div ul li{
+	font-family: Arial;
+}
+#guide_txt div:last-child{
+	width:100px;
+}
+#guide_txt div>p{
+	font-size:16px;
+	margin:6px 0;
+}
+/*页脚*/
+#footer{
+	margin:0 auto;
+	padding:20px 0 30px 0;
+	text-align:center;
+	
+	border-top:1px solid #E5E5E5;
+}
+#footer p{
+	margin:3px 0;
+}
+#footer p a{
+	margin-right: 3px
+}
+#footer img{
+	margin-right: 10px
+}
