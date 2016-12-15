@@ -13,8 +13,3 @@ function showHide(hiddenDiv,status){
    this.background="white";
 }
 
-function onmouseShow(showId){
-        
-    	document.getElementById(showId).style.display="block";
-    
-}
